@@ -4,6 +4,6 @@
 
 ---
 
-## Todo:
+## Potential extras to add:
 
-- Finish/flesh out entertainment page
+- flesh out entertainment page functionality (by adding a player and specific dragons)
