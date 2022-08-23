@@ -4,7 +4,7 @@ const makeNavItem = (text, href) => {
 	let a = document.createElement('a');
 	a.classList.add('nav-link');
 	a.href = href;
-	a.text = text;
+	a.textContent = text;
 	li.appendChild(a);
 	return li;
 };
