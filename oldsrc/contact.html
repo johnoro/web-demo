@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Contact</title>
+        <meta name="description" content="This page is for demonstrative purposes.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./css/style.css">
+        <script type="module" src="./js/nav/index.js"></script>
+        <script type="module" src="./js/contact/index.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <nav id="nav"></nav>
+        
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="text-center">Contact</h1>
+                    <form name="contactForm" id="contact-form">
+                        <div class="mb-3">
+                            <label for="contact-email" class="form-label">Email address</label>
+                            <input type="email" 
+                                class="form-control" 
+                                id="contact-email" 
+                                placeholder="name@example.com"
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="contact-message" class="form-label">Message</label>
+                            <textarea class="form-control" 
+                                id="contact-message" 
+                                rows="5"
+                                placeholder="A message is required."
+                                required
+                            ></textarea>
+                        </div>
+                        <button class="btn btn-primary btn-lg btn-block" type="submit">Send</button>
+                    </form>
+                    <hr />
+                    <address class="fw-semibold">
+                        <p>Phone: <span class="fst-italic">012-345-6789</span></p>
+                        <p>Email: <span class="fst-italic">notarealaddress@domain.extension</span></p>
+                        <p>Address: <span class="fst-italic">123 Local Road</span></p>
+                    </address>
+                </div>
+                <img src="./img/contact/telephone.png" 
+                    alt="A telephone icon."
+                    class="rounded-circle mx-auto d-block shrink-img"
+                />
+            </div>
+        </div>
+    </body>
+</html>
