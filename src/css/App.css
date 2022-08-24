@@ -1,0 +1,27 @@
+/* Nav */
+.active {
+  pointer-events: none;
+  color: gray;
+}
+
+/* General */
+.shrink-img {
+  width: 50%;
+}
+
+/* Contact */
+#contact-message {
+  resize: none;
+}
+
+/* Entertainment */
+.game-img {
+  height: auto;
+  width: auto;
+  max-width: 150px;
+  max-height: 150px;
+}
+
+.game-img:hover {
+  cursor: pointer;
+}
