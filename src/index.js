@@ -3,11 +3,11 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import 'css/index.css';
 import App from 'component/App';
-import Home from 'component/home/index';
-import About from 'component/about/index';
-import Contact from 'component/contact/index';
-import Entertainment from 'component/entertainment/index';
-import Testimonials from 'component/testimonials/index';
+import Home from 'component/home';
+import About from 'component/about';
+import Contact from 'component/contact';
+import Entertainment from 'component/entertainment';
+import Testimonials from 'component/testimonials';
 import reportWebVitals from 'util/reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

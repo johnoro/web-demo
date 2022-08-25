@@ -9,6 +9,9 @@
   width: 50%;
 }
 
+
+/***** TODO: MOVE into separate files *****/
+
 /* Contact */
 #contact-message {
   resize: none;

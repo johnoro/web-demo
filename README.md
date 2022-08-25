@@ -1,12 +1,8 @@
-# A demo site utilizing HTML, CSS, and JS along with Bootstrap and React.
+# A demo site utilizing HTML, CSS, and JS along with React, React Router, and Bootstrap.
 
 ### Deployed at [https://johnoro-demo.netlify.app](https://johnoro-demo.netlify.app)
 
 ---
-
-## Todo:
-
-- Finish refactoring entertainment view.
 
 ## Potential extras:
 
