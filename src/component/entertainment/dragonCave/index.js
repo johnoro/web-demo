@@ -1,3 +1,4 @@
+import 'css/game.css';
 import { useState, useEffect } from 'react';
 import getRandomInt from 'util/randomInt.js';
 import { lines, outcomes } from './content.js';

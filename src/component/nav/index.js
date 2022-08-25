@@ -3,9 +3,8 @@ import content from './content';
 import NavItem from './Item';
 import VR from 'component/helper/VR';
 
-const Navigation = ({ props }) => {
+const Navigation = ({ _ }) => {
 	const { links } = content;
-	const len = links.length;
 	return (
 		<>
 			<hr />

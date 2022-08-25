@@ -1,0 +1,10 @@
+.game-img {
+    height: auto;
+    width: auto;
+    max-width: 150px;
+    max-height: 150px;
+}
+
+.game-img:hover {
+    cursor: pointer;
+}
