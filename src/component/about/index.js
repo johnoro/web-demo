@@ -1,4 +1,8 @@
+import useTitle from 'component/helper/useTitle';
+
 const About = () => {
+	useTitle('About');
+
 	return (
 		<div className='row'>
 			<div className='col-md-12'>

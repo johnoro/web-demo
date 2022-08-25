@@ -1,6 +1,9 @@
 import Game from './dragonCave';
+import useTitle from 'component/helper/useTitle';
 
 const Entertainment = () => {
+	useTitle('Entertainment');
+
 	return (
 		<div className='row'>
 			<div className='col-md-12'>

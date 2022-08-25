@@ -1,4 +1,8 @@
+import useTitle from 'component/helper/useTitle';
+
 const Home = () => {
+	useTitle('Home');
+
 	return (
 		<>
 			<div className='row'>

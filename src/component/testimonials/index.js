@@ -1,7 +1,10 @@
 import Carousel from 'react-bootstrap/Carousel';
 import testimonials from './content.js';
+import useTitle from 'component/helper/useTitle.js';
 
 const Testimonials = () => {
+	useTitle('Testimonials');
+
 	return (
 		<div className='row'>
 			<div className='col-md-12'>
