@@ -1,11 +1,13 @@
 import 'css/game.css';
 import { useState, useEffect } from 'react';
+import useTitle from 'component/helper/useTitle';
 import getRandomInt from 'util/randomInt.js';
 import { lines, outcomes } from './content.js';
 import Paragraph from './Paragraph.js';
 import CaveIcon from './CaveIcon.js';
 
-const Game = ({ _ }) => {
+const DragonCave = ({ _ }) => {
+	useTitle('Dragon Cave');
 	const [isSelecting, setIsSelecting] = useState(true);
 	const [randomInd, setRandomInd] = useState(0);
 	const [selectedOutcome, setSelectedOutcome] = useState('');
@@ -28,6 +30,14 @@ const Game = ({ _ }) => {
 		);
 	}, []);
 
+	const playAgain = () => {
+		randInt();
+		setSelectedOutcome('');
+		setIsSelecting(true);
+	};
+
+	// move out play again into separate components
+	// and make a Game component to hold it and specific game components like this one
 	return (
 		<div className='game'>
 			<Paragraph
@@ -41,12 +51,8 @@ const Game = ({ _ }) => {
 			) : (
 				<div className='d-flex justify-content-center'>
 					<button
-						className='btn btn-primary play-again'
-						onClick={() => {
-							randInt();
-							setSelectedOutcome('');
-							setIsSelecting(true);
-						}}>
+						className='btn btn-dark btn-lg play-again'
+						onClick={playAgain}>
 						Play Again
 					</button>
 				</div>
@@ -55,4 +61,4 @@ const Game = ({ _ }) => {
 	);
 };
 
-export default Game;
+export default DragonCave;

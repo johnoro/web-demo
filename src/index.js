@@ -6,8 +6,9 @@ import App from 'component/App';
 import Home from 'component/home';
 import About from 'component/about';
 import Contact from 'component/contact';
-import Entertainment from 'component/entertainment';
 import Testimonials from 'component/testimonials';
+import Entertainment from 'component/entertainment';
+import DragonCave from 'component/entertainment/dragonCave';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -30,8 +31,12 @@ root.render(
 					/>
 					<Route
 						path='entertainment'
-						element={<Entertainment />}
-					/>
+						element={<Entertainment />}>
+						<Route
+							path='dragon-cave'
+							element={<DragonCave />}
+						/>
+					</Route>
 					<Route
 						path='testimonials'
 						element={<Testimonials />}
