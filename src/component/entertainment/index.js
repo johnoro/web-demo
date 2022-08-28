@@ -1,20 +1,8 @@
-import { Outlet } from 'react-router-dom';
-import { Fragment, useState } from 'react';
 import useTitle from 'component/helper/useTitle';
-import GameLink from './GameLink';
+import GameMenu from './GameMenu';
 
 const Entertainment = () => {
 	useTitle('Entertainment');
-	const games = ['Dragon Cave'];
-	const [isSelecting, setIsSelecting] = useState(true);
-
-	const handleGameLinkClick = () => {
-		setIsSelecting(false);
-	};
-
-	const handleBackClick = () => {
-		setIsSelecting(true);
-	};
 
 	return (
 		<div className='row'>
@@ -25,32 +13,7 @@ const Entertainment = () => {
 					Feel free to try any and all of them and see what you like!
 				</p>
 				<hr />
-				{isSelecting ? (
-					<ul className='nav justify-content-evenly'>
-						{games.map((link, i) => {
-							return (
-								<GameLink
-									key={i}
-									view={link}
-									onClick={handleGameLinkClick}
-								/>
-							);
-						})}
-					</ul>
-				) : (
-					<>
-						<Outlet />
-						<hr />
-						<ul className='nav justify-content-end me-2'>
-							<GameLink
-								view='Back to game selection'
-								to='/entertainment'
-								className='btn btn-dark'
-								onClick={handleBackClick}
-							/>
-						</ul>
-					</>
-				)}
+				<GameMenu />
 				<hr />
 			</div>
 			<img
