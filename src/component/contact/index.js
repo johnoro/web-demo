@@ -1,4 +1,4 @@
-import 'css/contact.css';
+import 'css/Contact.css';
 import useTitle from 'component/helper/useTitle';
 import Form from './form';
 

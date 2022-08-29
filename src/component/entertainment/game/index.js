@@ -1,4 +1,4 @@
-import 'css/game.css';
+import 'css/Game.css';
 import { useState, useCallback, useEffect } from 'react';
 import useTitle from 'component/helper/useTitle';
 import Paragraph from './Paragraph.js';
