@@ -1,0 +1,9 @@
+.attributions {
+    list-style-type: circle;
+}
+.attributions li a:hover {
+    color: #000;
+}
+.attributions li a:focus {
+    color: #000;
+}

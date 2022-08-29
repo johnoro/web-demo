@@ -1,4 +1,7 @@
+import 'css/About.css';
 import useTitle from 'component/helper/useTitle';
+import Attribution from './Atrribution';
+import attributions from './content';
 
 const About = () => {
 	useTitle('About');
@@ -11,6 +14,15 @@ const About = () => {
 					These web pages are created by John O'Rourke for demonstrative
 					purposes, hence the usage of filler text in some places.
 				</p>
+				<h4>Attributions:</h4>
+				<ul className='attributions'>
+					{attributions.map((details, i) => (
+						<Attribution
+							{...details}
+							key={i}
+						/>
+					))}
+				</ul>
 				<hr />
 				<p className='fw-semibold'>
 					Source code:{' '}

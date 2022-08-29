@@ -4,6 +4,12 @@
   color: gray !important;
 }
 
+@media(max-width: 520px) {
+  .nav .vr {
+    display: none;
+  }
+}
+
 /* General */
 .shrink-img {
   width: 50%;
