@@ -3,7 +3,7 @@ import { useState } from 'react';
 import GameLink from './GameLink';
 
 const GameMenu = () => {
-	const games = ['Dragon Cave'];
+	const games = ['Dragon Cave', 'Humans Vs Goblins'];
 	const [isSelecting, setIsSelecting] = useState(true);
 
 	const handleGameLinkClick = () => {

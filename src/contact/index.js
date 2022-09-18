@@ -1,5 +1,5 @@
-import 'css/Contact.css';
-import useTitle from 'component/helper/useTitle';
+import './Contact.css';
+import useTitle from 'common/useTitle';
 import Form from './form';
 
 const Contact = () => {

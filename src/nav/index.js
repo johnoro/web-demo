@@ -1,7 +1,7 @@
 import { Fragment } from 'react';
 import content from './content';
 import NavItem from './Item';
-import VR from 'component/helper/VR';
+import VR from 'common/VR';
 
 const Navigation = ({ _ }) => {
 	const { links } = content;

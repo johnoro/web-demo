@@ -1,6 +1,6 @@
 import Carousel from 'react-bootstrap/Carousel';
 import testimonials from './content.js';
-import useTitle from 'component/helper/useTitle.js';
+import useTitle from 'common/useTitle.js';
 
 const Testimonials = () => {
 	useTitle('Testimonials');

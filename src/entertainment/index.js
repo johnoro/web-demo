@@ -1,4 +1,4 @@
-import useTitle from 'component/helper/useTitle';
+import useTitle from 'common/useTitle';
 import GameMenu from './GameMenu';
 
 const Entertainment = () => {

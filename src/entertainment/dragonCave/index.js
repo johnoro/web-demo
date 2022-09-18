@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import getRandomInt from 'util/randomInt.js';
-import Game from 'component/entertainment/game';
+import Game from 'entertainment/game';
 import { lines, outcomes } from './content.js';
 import CaveIcon from './CaveIcon.js';
 

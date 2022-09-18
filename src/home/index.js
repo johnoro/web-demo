@@ -1,4 +1,4 @@
-import useTitle from 'component/helper/useTitle';
+import useTitle from 'common/useTitle';
 
 const Home = () => {
 	useTitle('Home');

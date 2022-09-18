@@ -1,14 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import 'css/index.css';
-import App from 'component/App';
-import Home from 'component/home';
-import About from 'component/about';
-import Contact from 'component/contact';
-import Testimonials from 'component/testimonials';
-import Entertainment from 'component/entertainment';
-import DragonCave from 'component/entertainment/dragonCave';
+import './index.css';
+import App from 'app';
+import Home from 'home';
+import About from 'about';
+import Contact from 'contact';
+import Testimonials from 'testimonials';
+import Entertainment from 'entertainment';
+import DragonCave from 'entertainment/dragonCave';
+import HumansVsGoblins from 'entertainment/humansVsGoblins';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -35,6 +36,10 @@ root.render(
 						<Route
 							path='dragon-cave'
 							element={<DragonCave />}
+						/>
+						<Route
+							path='humans-vs-goblins'
+							element={<HumansVsGoblins />}
 						/>
 					</Route>
 					<Route

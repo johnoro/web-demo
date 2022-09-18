@@ -1,5 +1,5 @@
-import 'css/About.css';
-import useTitle from 'component/helper/useTitle';
+import './About.css';
+import useTitle from 'common/useTitle';
 import Attribution from './Atrribution';
 import attributions from './content';
 
